@@ -1,0 +1,10 @@
+#!/bin/sh
+# Script for copy file to RicoBoard
+
+if [ $# -gt 0 ]; then
+	cp $* /media/kyzoon/boot
+	ls -al /media/kyzoon/boot
+	echo "Finish Copy..."
+else
+	echo "Pleas Input some copy files..."
+fi
